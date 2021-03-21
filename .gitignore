@@ -1,0 +1,6 @@
+*.log
+npm-debug.log*
+.npm
+.eslintcache
+node_modules/
+**-config.js
