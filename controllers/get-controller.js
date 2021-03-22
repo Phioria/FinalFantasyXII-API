@@ -16,7 +16,7 @@ exports.getSingleCharacter = (req, res) => {
   const filter = {name: characterName};
   Character.findOne(filter)
     .exec((error, character) => {
-      if (error) res.status(500).json({ message: error });
+      if (error) return res.status(500).json({ message: error });
       if (!character) {
         return res.status(404).json({
           message: "No character by that name exists in database. Condiser visiting /characters for current list of characters."
@@ -37,5 +37,3 @@ exports.getSingleSpell = (req, res) => {
 exports.getSingleMagickType = (req, res) => {
   return res.status(200).json({ message: "This is a single magick type..."});
 }
-
-
