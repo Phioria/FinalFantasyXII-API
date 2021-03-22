@@ -1,4 +1,4 @@
-const Controller = require('../controllers/getController.js');
+const Controller = require('../controllers/get-controller.js');
 
 module.exports = function(app) {
   app.use((req, res, next) => {
@@ -13,15 +13,13 @@ module.exports = function(app) {
   app.get('/characters/:character', Controller.getSingleCharacter);
 
   // Spells
-  app.get('/magick', Controller.getMagicSummary);
-  //app.get('/magic', Controller.magicRedirect);
-  // Instead consider using the built in redirect function in express
+  app.get('/magick', Controller.getMagickSummary);
   app.get('magic', (req, res) => res.redirect('/magick'));
   
   app.get('/magick/:spell', Controller.getSingleSpell);
-  app.get('/magic/:spell', Controller.magicRedirect);
-  app.get('/magick/:type', Controller.getSingleMagicType);
-  app.get('/magic/:type', Controller.magicRedirect);
+  app.get('/magic/:spell', (req, res) => res.redirect(`/magick/:${req.params.spell}`)); // is this the correct way to do this?
+  app.get('/magick/:type', Controller.getSingleMagickType);
+  app.get('/magic/:type', (req, res) => res.redirect(`/magick/:${req.params.type}`)); // is this correct?
 
   
 
