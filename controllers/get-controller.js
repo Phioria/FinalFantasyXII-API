@@ -26,7 +26,7 @@ exports.getSingleCharacter = (req, res) => {
     });
 }
 
-exports.getMagickSummary = (req, res) => {
+exports.getAllMagick = (req, res) => {
   return res.status(200).json({ message: "This is the magick summary data..." });
 }
 
@@ -36,4 +36,68 @@ exports.getSingleSpell = (req, res) => {
 
 exports.getSingleMagickType = (req, res) => {
   return res.status(200).json({ message: "This is a single magick type..."});
+}
+
+exports.getAllArmor = (req, res) => {
+  return res.status(200).json({ message: "This is all the armor..." });
+}
+
+exports.getSingleArmorType = (req, res) => {
+  return res.status(200).json({ message: "This is a single armor type..." });
+}
+
+exports.getSingleArmorItem = (req, res) => {
+  return res.status(200).json({ message: "This is a single piece of armor..." });
+}
+
+exports.getAllWeapons = (req, res) => {
+ return res.status(200).json({ message: "Here's the weaps..." });
+}
+
+exports.getSingleWeaponType = (req, res) => {
+  return res.status(200).json({ message: "Weap Types..." });
+}
+
+exports.getSingleWeapon = (req, res) => {
+  return res.status(200).json({ message: "here's one weap..." });
+}
+
+exports.getAllAccessories = (req, res) => {
+  return res.status(200).json({ message: "All Accessories..." });
+}
+
+exports.getSingleAccessory = (req, res) => {
+  return res.status(200).json({ message: "This is an accessory..." });
+}
+
+exports.getAllItems = (req, res) => {
+  return res.status(200).json({ message: "This is all the items..." });
+}
+
+exports.getSingleItem = (req, res) => {
+  return res.status(200).json({ message: "This is a single item..." });
+}
+
+exports.getAllGambits = (req, res) => {
+  return res.status(200).json({ message: "This is all the gambits..." });
+}
+
+exports.getSingleGambit = (req, res) => {
+  return res.status(200).json({ message: "This is a single gambit..." });
+}
+
+exports.getAllTechniks = (req, res) => {
+  return res.status(200).json({ message: "This is all the techniks..." });
+}
+
+exports.getSingleTechnik = (req, res) => {
+  return res.status(200).json({ message: "This is a single technik..." });
+}
+
+exports.getAllStatusEffects = (req, res) => {
+  return res.status(200).json({ message: "This is all the status effects..." });
+}
+
+exports.getSingleStatusEffect = (req, res) => {
+  return res.status(200).json({ message: "This is a single status effect..." });
 }
