@@ -101,3 +101,23 @@ exports.getAllStatusEffects = (req, res) => {
 exports.getSingleStatusEffect = (req, res) => {
   return res.status(200).json({ message: "This is a single status effect..." });
 }
+
+exports.getAllCities = (req, res) => {
+  return res.status(200).json({ message: "This is all the cities..." });
+}
+
+exports.getSingleCity = (req, res) => {
+  return res.status(200).json({ message: "This is a single city..." });
+}
+
+exports.getAllQuickenings = (req, res) => {
+  return res.status(200).json({ message: "This is all the quickenings..." });
+}
+
+exports.getQuickeningsByCharacter = (req, res) => {
+  return res.status(200).json({ message: "This is all the quickenings for a particular character..." });
+}
+
+exports.getSingleQuickening = (req, res) => {
+  return res.status(200).json({ message: "This is a single quickening..." });
+}

@@ -73,7 +73,8 @@ module.exports = function(app) {
 
 
   // Cities
-
+  app.get('/cities', Controller.getAllCities);
+  app.get('/cities/city', Controller.getSingleCity);
 
   // Zones
 
@@ -88,7 +89,9 @@ module.exports = function(app) {
 
 
   // Quickenings
-
+  app.get('/quickenings', Controller.getAllQuickenings);
+  app.get('/quickenings/:character', Controller.getQuickeningsByCharacter);
+  app.get('/quickenings/:quickening', Controller.getSingleQuickening);
 
   // Bosses
 
