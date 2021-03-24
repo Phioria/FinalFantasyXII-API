@@ -46,8 +46,8 @@ router.get('/gambits', Controller.getAllGambits);
 router.get('/gambits/:gambit', Controller.getSingleGambit);
 
 // Techniks
-router.get('/techniks', Controller.getAllTechniks);
-router.get('/techniks/:technik', Controller.getSingleTechnik);
+router.get('/technicks', Controller.getAllTechnicks);
+router.get('/technicks/:technick', Controller.getSingleTechnick);
 
 // Status Effects
 router.get('/status-effects', Controller.getAllStatusEffects);

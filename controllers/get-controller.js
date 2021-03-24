@@ -86,12 +86,12 @@ exports.getSingleGambit = (req, res) => {
   return res.status(200).json({ message: "This is a single gambit..." });
 }
 
-exports.getAllTechniks = (req, res) => {
-  return res.status(200).json({ message: "This is all the techniks..." });
+exports.getAllTechnicks = (req, res) => {
+  return res.status(200).json({ message: "This is all the technicks..." });
 }
 
-exports.getSingleTechnik = (req, res) => {
-  return res.status(200).json({ message: "This is a single technik..." });
+exports.getSingleTechnick = (req, res) => {
+  return res.status(200).json({ message: "This is a single technick..." });
 }
 
 exports.getAllStatusEffects = (req, res) => {
